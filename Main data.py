@@ -67,9 +67,9 @@ def main():
     filename = get_valid_filename()
     choice = ""
 
-    while choice != "exit":
+    while choice != "exit": #allows the program to run multiple times
         check_powerball_combination(filename)
-        choice = input("Do you want to check another combination? Type 'exit' to end the program: ")
+        choice = input("Do you want to check another combination? Type 'exit' to end the program: ").lower()
 
 #run the program
 main()
